@@ -422,14 +422,14 @@ export default function ServiceDetailPage() {
                                             A curated selection of recent case studies, highlighting real-world impact and beautiful digital design.
                                         </p>
                                     </div>
-                                    <Link href="/freelancer/sikander/portfolio" className="inline-flex items-center justify-center h-12 px-6 rounded-[14px] bg-[#0A0A0A] text-white text-[11px] font-black uppercase tracking-widest hover:bg-indigo-600 hover:shadow-[0_8px_30px_rgb(79,70,229,0.3)] hover:-translate-y-0.5 transition-all duration-300 shrink-0 gap-2 group z-10">
+                                    <Link target="_blank" href="/freelancer/sikander/portfolio" className="inline-flex items-center justify-center h-12 px-6 rounded-[14px] bg-[#0A0A0A] text-white text-[11px] font-black uppercase tracking-widest hover:bg-indigo-600 hover:shadow-[0_8px_30px_rgb(79,70,229,0.3)] hover:-translate-y-0.5 transition-all duration-300 shrink-0 gap-2 group z-10">
                                         View Full Portfolio <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                                     </Link>
                                 </div>
 
                                 <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5">
                                     {/* Primary Bento Hero Card */}
-                                    <Link href="/freelancer/sikander/portfolio" className="md:col-span-8 relative rounded-[28px] overflow-hidden aspect-[4/3] md:aspect-auto md:h-[500px] border border-black/5 bg-gray-100 group cursor-pointer hover:shadow-2xl hover:border-black/10 transition-all duration-500 block">
+                                    <Link target="_blank" href="/freelancer/sikander/portfolio" className="md:col-span-8 relative rounded-[28px] overflow-hidden aspect-[4/3] md:aspect-auto md:h-[500px] border border-black/5 bg-gray-100 group cursor-pointer hover:shadow-2xl hover:border-black/10 transition-all duration-500 block">
                                         <img src={GIG_DATA.images[0]} alt="Featured Project" className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]" />
 
                                         {/* Elegant shadow gradient */}
@@ -474,7 +474,7 @@ export default function ServiceDetailPage() {
                                             { img: GIG_DATA.images[1], title: "E-Commerce Experience", tag: "Mobile Design" },
                                             { img: GIG_DATA.images[2], title: "Healthcare Solutions", tag: "Enterprise" }
                                         ].map((project, i) => (
-                                            <Link href="/freelancer/sikander/portfolio" key={i} className="flex-1 relative rounded-[28px] overflow-hidden bg-gray-100 border border-black/5 group cursor-pointer hover:shadow-xl hover:border-black/10 transition-all duration-500 aspect-[4/3] md:aspect-auto block">
+                                            <Link target="_blank" href="/freelancer/sikander/portfolio" key={i} className="flex-1 relative rounded-[28px] overflow-hidden bg-gray-100 border border-black/5 group cursor-pointer hover:shadow-xl hover:border-black/10 transition-all duration-500 aspect-[4/3] md:aspect-auto block">
                                                 <img src={project.img} alt={project.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]" />
 
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-90 transition-opacity group-hover:opacity-100" />
@@ -495,7 +495,7 @@ export default function ServiceDetailPage() {
                                 </div>
 
                                 <div className="mt-5 flex justify-end">
-                                    <Link href="/freelancer/sikander/portfolio" className="text-[11px] font-black text-gray-500 hover:text-black uppercase tracking-widest flex items-center gap-1.5 group transition-all mr-2">
+                                    <Link target="_blank" href="/freelancer/sikander/portfolio" className="text-[11px] font-black text-gray-500 hover:text-black uppercase tracking-widest flex items-center gap-1.5 group transition-all mr-2">
                                         Explore More Projects <ArrowRight size={14} className="group-hover:translate-x-1.5 transition-transform" />
                                     </Link>
                                 </div>
