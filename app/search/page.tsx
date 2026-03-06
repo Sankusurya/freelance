@@ -351,7 +351,7 @@ const SORT_OPTIONS = [
     "Newest arrivals"
 ];
 
-function FreelancerCard({ freelancer }) {
+function FreelancerCard({ freelancer }: { freelancer: any }) {
     return (
         <div className="flex flex-col border border-black/5 rounded-3xl overflow-hidden group cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
             {/* Thumbnail */}
@@ -431,7 +431,7 @@ export default function SearchPage() {
         return () => window.removeEventListener('resize', checkScroll);
     }, []);
 
-    const scrollByAmount = (amount) => {
+    const scrollByAmount = (amount: number) => {
         if (categoriesRef.current) {
             categoriesRef.current.scrollBy({ left: amount, behavior: 'smooth' });
         }
@@ -458,14 +458,14 @@ export default function SearchPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const ITEMS_PER_PAGE = 12;
 
-    const handleCategoryClick = (cat) => {
+    const handleCategoryClick = (cat: string) => {
         setSelectedFilters(prev => ({ ...prev, "Service Type": cat }));
         setActiveService(null);
         setSearchQuery("");
         setHoveredCategory(null);
     };
 
-    const handleSubServiceClick = (service, category) => {
+    const handleSubServiceClick = (service: string, category: string) => {
         setSelectedFilters(prev => ({ ...prev, "Service Type": category }));
         setActiveService(service.split('|')[0]); // ignore new/tool tags
         setSearchQuery("");
@@ -629,7 +629,7 @@ export default function SearchPage() {
                                 >
                                     <button
                                         onClick={() => handleCategoryClick(cat)}
-                                        className={`whitespace-nowrap pb-2 text-xs py-2 font-bold uppercase tracking-widest text-gray-500 hover:text-[#0A0A0A] transition-colors flex items-center gap-2 ${(hoveredCategory === cat || selectedFilters.Category === cat) ? 'text-[#0A0A0A] border-b-2 border-[#0A0A0A]' : 'border-b-2 border-transparent'}`}>
+                                        className={`whitespace-nowrap pb-2 text-xs py-2 font-bold uppercase tracking-widest text-gray-500 hover:text-[#0A0A0A] transition-colors flex items-center gap-2 ${(hoveredCategory === cat || selectedFilters["Service Type"] === cat) ? 'text-[#0A0A0A] border-b-2 border-[#0A0A0A]' : 'border-b-2 border-transparent'}`}>
                                         {cat}
                                     </button>
                                 </div>

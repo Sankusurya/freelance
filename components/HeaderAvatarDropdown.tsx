@@ -150,7 +150,7 @@ export default function HeaderAvatarDropdown({
 }
 
 // Subcomponents for cleaner code
-function DropdownItem({ label, icon, onClick, className = "text-gray-600 hover:text-[#0A0A0A]" }) {
+function DropdownItem({ label, icon, onClick, className = "text-gray-600 hover:text-[#0A0A0A]" }: { label: string, icon?: React.ReactNode, onClick?: () => void, className?: string }) {
     return (
         <button
             onClick={onClick}
@@ -162,7 +162,7 @@ function DropdownItem({ label, icon, onClick, className = "text-gray-600 hover:t
     );
 }
 
-function CurrencyOption({ label, symbol, isSelected, onSelect }) {
+function CurrencyOption({ label, symbol, isSelected, onSelect }: { label: string, symbol: string, isSelected: boolean, onSelect: () => void }) {
     return (
         <button
             onClick={onSelect}

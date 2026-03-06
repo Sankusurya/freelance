@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Link, ArrowLeft, MoreHorizontal, User, ShieldCheck, Clock, MapPin, CheckCircle2, MessageSquare, Briefcase, Paperclip, ChevronRight, X } from "lucide-react";
+import { Link as LinkIcon, ArrowLeft, MoreHorizontal, User, ShieldCheck, Clock, MapPin, CheckCircle2, MessageSquare, Briefcase, Paperclip, ChevronRight, X } from "lucide-react";
 
 export default function ProjectDashboard() {
     const [viewMode, setViewMode] = useState('client'); // 'client' | 'freelancer'

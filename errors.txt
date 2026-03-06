@@ -1,0 +1,16 @@
+﻿app/HomeDashboard/page.tsx(1,27): error TS2307: Cannot find module '@/components/HomeDashboard' or its corresponding type declarations.
+app/page.tsx(1,25): error TS2307: Cannot find module '@/components/LandingPage' or its corresponding type declarations.
+app/search/page.tsx(632,248): error TS2339: Property 'Category' does not exist on type '{ "Service Type": string; "Budget Range": string; "Delivery Time": string; "Seller Level": string; Rating: string; }'.
+app/services/page.tsx(676,248): error TS2339: Property 'Category' does not exist on type '{ "Service Type": string; "Budget Range": string; "Delivery Time": string; "Seller Level": string; Rating: string; }'.
+components/HeaderAvatarDropdown.tsx(79,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/HeaderAvatarDropdown.tsx(80,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/HeaderAvatarDropdown.tsx(81,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/HeaderAvatarDropdown.tsx(86,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/HeaderAvatarDropdown.tsx(87,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/HeaderAvatarDropdown.tsx(88,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/HeaderAvatarDropdown.tsx(93,38): error TS2741: Property 'onClick' is missing in type '{ label: string; icon: Element; }' but required in type '{ label: any; icon: any; onClick: any; className?: string; }'.
+components/HeaderAvatarDropdown.tsx(97,38): error TS2741: Property 'icon' is missing in type '{ label: string; onClick: () => void; }' but required in type '{ label: any; icon: any; onClick: any; className?: string; }'.
+components/HeaderAvatarDropdown.tsx(101,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/HeaderAvatarDropdown.tsx(106,38): error TS2739: Type '{ label: string; }' is missing the following properties from type '{ label: any; icon: any; onClick: any; className?: string; }': icon, onClick
+components/LandingPage.tsx(947,248): error TS2339: Property 'Category' does not exist on type '{ "Service Type": string; "Budget Range": string; "Delivery Time": string; "Seller Level": string; Rating: string; }'.
+components/ProjectDashboard.tsx(287,111): error TS2304: Cannot find name 'LinkIcon'.
